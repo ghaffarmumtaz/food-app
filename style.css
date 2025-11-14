@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    padding: 1%;
+    width: 90vw;
+    height: 100vh;
+    margin: 0 auto;  
+}
+
+.underLine {
+    height: 2px;
+    width: 60px;
+    background-color: rgb(255, 208, 0);
+    margin-top: 0.5%;
+}
+
+.buttons{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2%;
+}
+
+.buttons button{
+    padding: 3px 5px;
+    color: rgb(255, 208, 0);
+}
+.buttons button:focus{
+    border-radius: 3px;
+    border: 2px solid rgb(255, 208, 0);
+}
+#cards{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+    margin: 2% auto;
+}
+.card {
+    display: flex;
+    width: 80%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    gap: 10px;
+    padding-right: 2%;
+}
+
+.card img{
+    width: 30%;
+    height: 100%;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 208, 0);
+    object-fit: cover;
+}
+.price{
+    color: rgb(255, 208, 0);
+}
+.headPrice{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4%;
+}
+
+.desc {
+    margin: 2% 0;
+}
+
+
+@media (max-width: 400px){
+    .card {
+    display: flex;
+    flex-direction: column;
+    width: 70% !important;
+    height: 80% !important;
+    gap: 5px;
+}
+.card img{
+    width: 50%;
+    height: 50% !important;
+
+}
+
+#cards {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: auto;
+    
+    margin-right: 50px !important;
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5% 5%;
+}
+
+.desc{
+    padding: 5px 10px;
+}
+
+.headPrice{
+ padding: 5px 10px;   
+}
+
+}
+
+@media (max-width: 786px){
+    .card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 5px;
+}
+.card img{
+    width: 100%;
+    height: 28%;
+
+}
+
+#main {
+    width: 60vw;
+  
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5% 5%;
+}
+
+.desc{
+    padding: 5px 10px;
+}
+.headPrice{
+ padding: 5px 10px;   
+}
+
+}
