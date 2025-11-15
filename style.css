@@ -121,8 +121,11 @@
     font-size: 14px;
     justify-content: center;
 }
+#title , .underLine{
+    margin-right: 50px;
 
 
+}
 }
 
 @media (max-width: 786px){
